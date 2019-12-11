@@ -1,0 +1,60 @@
+header {
+    width: 100%;
+    display: grid;
+    grid-template-areas:"arriba arriba"
+                        "abajoizquierda abajoderecha";
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+.top{
+    grid-area: arriba;
+    height: 50px;
+    background-color: #47cfac;
+    display: grid;
+}
+
+.top-container{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+.top-container span{
+    color: white;
+}
+
+.logo{
+    grid-area: abajoizquierda;
+    height: 90px;
+    margin-left: 50px;
+}
+
+.logo img{
+    width: 230px;
+    margin-top: 10px;
+}
+
+.sobremi{
+    grid-area: abajoderecha;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.sobremi a{
+    color: black;
+    border-bottom: 1px solid black;
+    font-family: 'Roboto Mono',monospace;
+}

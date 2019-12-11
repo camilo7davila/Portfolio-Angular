@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    grid-template-rows: 40px 80px;
+}
+
+.row1{
+    background: #47cfac ;
+    font-size: 1px;
+    color: #47cfac;
+}
+
+.row2{
+    background: #23282d;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.row2{
+    font-family: 'Roboto Mono',monospace;
+    font-size: 15px;
+    color: white;
+    font-weight: 500px;
+}
