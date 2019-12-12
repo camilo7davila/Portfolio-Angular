@@ -52,3 +52,14 @@ section{
 .container-2-text p{
    margin: 10px 0 0 0;
 }
+
+@media screen and (max-width: 767px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:10px
+    }
+    section{
+        height: auto;
+    }
+}

@@ -94,3 +94,34 @@ main {
     margin-top: 10px;
     color: black;
 }
+
+@media screen and (max-width:767px){
+    .container-general{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px 10px 40px;
+    }
+
+    .container-text{
+        padding:5px;
+    }
+
+    .container-right h2{
+        font-family: 'Roboto Mono',monospace;
+        font-size: 25px;
+        margin: 0 0 10px;
+    }
+    .container-text p{
+        font-size: 15px;
+        font-family: 'Roboto Slab', serif;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .posts-container div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
