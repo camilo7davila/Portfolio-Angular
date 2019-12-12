@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
-import { LayoutComponent } from './layout/layout.component';
-import { LayoutFooterComponent } from './layout-footer/layout-footer.component';
+import { LayoutComponent } from './layouts/layout/layout.component';
+import { LayoutFooterComponent } from './layouts/layout-footer/layout-footer.component';
+import { LayoutcontactComponent } from './layouts/layoutcontact/layoutcontact.component';
 
 
 const routes: Routes = [
@@ -27,8 +28,14 @@ const routes: Routes = [
             loadChildren: () => import('./blogs/blogs.module').then(m => m.BlogsModule)
           },
           {
-            path: 'blog',
-            loadChildren: () => import('./blogpost/blogpost.module').then(m => m.BlogpostModule)
+            path:'',
+            component: LayoutcontactComponent,
+            children: [
+              {
+                path: 'blog',
+                loadChildren: () => import('./blogpost/blogpost.module').then(m => m.BlogpostModule)
+              },
+            ]
           },
         ]
       },
